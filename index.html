@@ -43,15 +43,6 @@
                     <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                     <button class="button" data-modal-open>Заказать услугу</button>
                 </div>
-                    <div class="backdrop is-hidden" data-modal>
-                        <div class="modal">
-                            <button class="btn-close" data-modal-close>
-                            <svg class="icon" width="11" height="11">
-                                <use href="./images/symbol-defs.svg#icon-close"></use>
-                            </svg>
-                            </button>
-                        </div>
-                    </div>
             </section>
             <!-- Особенности -->
             <section class="features section">
@@ -288,6 +279,38 @@
                     </ul>
                 </div>
             </section>
+            <!-- Модальное окно -->
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">              
+                                 
+                    <form action="#" method="post">
+                        <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+                        <label class="form-label">
+                            <span>Имя</span>
+                            <input type="text">
+                        </label>
+                        <label for="" class="form-label">
+                            <span>Телефон</span>
+                            <input type="tel" name="" id="">
+                        </label>
+                        <label class="form-label">
+                            <span>Почта</span>
+                            <input type="email" name="" id="">
+                        </label>
+                        <label for="" class="form-label">
+                            <span>Комментарий</span>
+                            <input type="text" name="" id="">
+                        </label>
+                    </form>
+                
+                    <button class="btn-close" data-modal-close>
+                        <svg class="icon" width="11" height="11">
+                            <use href="./images/symbol-defs.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    
+                </div>
+            </div>
         </main>
         <!-- Подвал сайта -->
     <footer class="footer indent">
