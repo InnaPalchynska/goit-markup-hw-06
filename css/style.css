@@ -771,7 +771,7 @@ label > span {
 }
 
 .form-data input {
-  display: block;
+  /* display: block; */
   width: 448px;
   height: 40px;
   padding-left: 42px;
@@ -786,7 +786,8 @@ input:hover {
   border-color: var(--accent-color);
 }
 
-.form-data input:focus + .icon {
+.form-data input:focus + .icon,
+.form-data input:hover + .icon {
   color: var(--accent-color);
 }
 
@@ -804,6 +805,8 @@ input[name='comment'] {
 
 .form-checkbox {
   margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .checkbox {
@@ -818,8 +821,15 @@ input[name='comment'] {
   background-image: url(/images/checkbox.svg);
   background-size: contain;
   background-origin: border-box;
+  background-repeat: no-repeat;
 }
 
 input[name='agreement']:checked + .checkbox-icon {
   background-image: url(/images/check.svg);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
