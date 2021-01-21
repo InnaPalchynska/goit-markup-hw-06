@@ -507,6 +507,25 @@ address {
   border-radius: 4px;
 }
 
+.subscription .button {
+  position: relative;
+  text-align: start;
+  padding-left: 27px;
+}
+
+.subscription .button::after {
+  position: absolute;
+  top: 0;
+  right: 28px;
+  transform: translateY(50%);
+  display: block;
+  content: ' ';
+  width: 24px;
+  height: 24px;
+  background-image: url(/images/send.svg);
+  background-size: contain;
+}
+
 .subscription input::placeholder {
   padding-left: 12px;
 }
@@ -761,7 +780,8 @@ label > span {
   border-radius: 4px;
 }
 
-.form-data input:focus {
+input:focus,
+input:hover {
   outline: none;
   border-color: var(--accent-color);
 }
