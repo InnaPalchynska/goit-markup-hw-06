@@ -739,6 +739,12 @@ address {
 
 /*Form*/
 
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .form-title {
   margin-bottom: 12px;
 
@@ -770,18 +776,24 @@ label > span {
   position: relative;
 }
 
-.form-data input {
-  /* display: block; */
+.form-data input,
+.form-data textarea {
   width: 448px;
   height: 40px;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+
+  transition-property: border-color;
+  transition-duration: var(--animation-time);
+  transition-timing-function: var(--animation-timing-function);
 }
 
 input:focus,
-input:hover {
+input:hover,
+textarea:focus,
+textarea:hover {
   outline: none;
   border-color: var(--accent-color);
 }
@@ -797,10 +809,16 @@ input:hover {
   left: 12px;
   transform: translateY(50%);
   color: var(--title-text-color);
+
+  transition-property: color;
+  transition-duration: var(--animation-time);
+  transition-timing-function: var(--animation-timing-function);
 }
 
-input[name='comment'] {
+textarea[name='comment'] {
   height: 120px;
+  padding: 12px 16px;
+  resize: none;
 }
 
 .form-checkbox {
@@ -822,14 +840,12 @@ input[name='comment'] {
   background-size: contain;
   background-origin: border-box;
   background-repeat: no-repeat;
+
+  transition-property: background-image;
+  transition-duration: var(--animation-time);
+  transition-timing-function: var(--animation-timing-function);
 }
 
 input[name='agreement']:checked + .checkbox-icon {
   background-image: url(/images/check.svg);
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
