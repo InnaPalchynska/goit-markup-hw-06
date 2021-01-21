@@ -522,7 +522,7 @@ address {
   content: ' ';
   width: 24px;
   height: 24px;
-  background-image: url(/images/send.svg);
+  background-image: url(./images/send.svg);
   background-size: contain;
 }
 
@@ -836,7 +836,7 @@ textarea[name='comment'] {
   margin-right: 7px;
   width: 16px;
   height: 15px;
-  background-image: url(/images/checkbox.svg);
+  background-image: url(./images/checkbox.svg);
   background-size: contain;
   background-origin: border-box;
   background-repeat: no-repeat;
@@ -847,5 +847,5 @@ textarea[name='comment'] {
 }
 
 input[name='agreement']:checked + .checkbox-icon {
-  background-image: url(/images/check.svg);
+  background-image: url(./images/check.svg);
 }
