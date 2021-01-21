@@ -705,7 +705,8 @@ address {
   line-height: 1.15;
 }
 
-.form {
+.form-data {
+  margin-bottom: 20px;
 }
 
 .form-label {
@@ -732,6 +733,7 @@ label > span {
   display: block;
   width: 448px;
   height: 40px;
+  padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -740,6 +742,10 @@ label > span {
 .form-data input:focus {
   outline: none;
   border-color: var(--accent-color);
+}
+
+.form-data input:focus + .icon {
+  color: var(--accent-color);
 }
 
 .form-input .icon {
@@ -754,5 +760,24 @@ input[name='comment'] {
   height: 120px;
 }
 
+.form-checkbox {
+  margin-bottom: 30px;
+}
+
 .checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-icon {
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  background-image: url(/images/checkbox.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+input[name='agreement']:checked + .checkbox-icon {
+  background-image: url(/images/check.svg);
 }
