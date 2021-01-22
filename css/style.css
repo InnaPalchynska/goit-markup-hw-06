@@ -496,11 +496,15 @@ address {
 
 .subscription input {
   margin-right: 12px;
+  padding-left: 16px;
 
   width: 358px;
   height: 50px;
   background-color: transparent;
 
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -713,10 +717,8 @@ address {
 
 .btn-close {
   position: absolute;
-  display: block;
-  margin-top: 8px;
-  margin-right: 8px;
-  margin-left: 490px;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
   cursor: pointer;
